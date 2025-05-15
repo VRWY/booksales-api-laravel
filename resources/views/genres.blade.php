@@ -18,15 +18,15 @@
     <table>
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Genre Name</th>
+                <th>Name</th>
+                <th>Description</th>
             </tr>
         </thead>
         <tbody>
             @foreach ($genres as $genre)
             <tr>
-                <td>{{ $genre['id'] }}</td>
                 <td>{{ $genre['name'] }}</td>
+                <td>{{ $genre['description'] }}</td>
             </tr>
             @endforeach
         </tbody>

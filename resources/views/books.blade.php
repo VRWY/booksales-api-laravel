@@ -26,21 +26,17 @@
                     <th>Description</th>
                     <th>Price</th>
                     <th>Stock</th>
-                    <th>Cover Photo</th>
-                    <th>Genre ID</th>
-                    <th>Author ID</th>
+                    <th>Genre</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach ($books as $item)
                 <tr>
                     <td>{{ $item['title'] }}</td>
-                    <td>{{ $item['description'] }}</td>
+                    <td>{{ $item['descripsi'] }}</td>
                     <td>{{ $item['price'] }}</td>
-                    <td>{{ $item['stock'] }}</td>
-                    <td>{{ $item['cover_photo'] }}</td>
-                    <td>{{ $item['genre_id'] }}</td>
-                    <td>{{ $item['author_id'] }}</td>
+                    <td>{{ $item['stok'] }}</td>
+                    <td>{{ $item['genre'] }}</td>
                 </tr>
                 @endforeach
             </tbody>

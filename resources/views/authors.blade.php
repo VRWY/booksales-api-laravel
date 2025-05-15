@@ -18,15 +18,15 @@
     <table>
         <thead>
             <tr>
-                <th>ID</th>
                 <th>Name</th>
+                <th>Title</th>
             </tr>
         </thead>
         <tbody>
             @foreach ($authors as $item)
             <tr>
-                <td>{{ $item['id'] }}</td>
                 <td>{{ $item['name'] }}</td>
+                <td>{{ $item['title'] }}</td>
             </tr>
             @endforeach
         </tbody>
