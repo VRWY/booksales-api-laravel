@@ -18,7 +18,9 @@ class BookSeeder extends Seeder
             'descripsi' => 'Aksi seru penuh adrenalin di medan perang modern.',
             'price' => 80000,
             'stok' => 60,
-            'genre' => 'Action',
+            'cover_photo' => 'PertarunganTerakhir_jpg',
+            'genre_id' => 1,
+            'author_id' => 1,
         ]);
 
         Book::create([
@@ -26,7 +28,9 @@ class BookSeeder extends Seeder
             'descripsi' => 'Cerita romantis tentang dua insan yang bertemu dalam keindahan hujan.',
             'price' => 70000,
             'stok' => 50,
-            'genre' => 'Romance',
+            'cover_photo' => 'asrama_jpg',
+            'genre_id' => 2,
+            'author_id' => 2,
         ]);
 
         Book::create([
@@ -34,7 +38,9 @@ class BookSeeder extends Seeder
             'descripsi' => 'Petualangan fantasi di kerajaan yang penuh sihir dan keajaiban.',
             'price' => 75000,
             'stok' => 45,
-            'genre' => 'Fantasy',
+            'cover_photo' => 'kerajaan_jpg',
+            'genre_id' => 3,
+            'author_id' => 3,
         ]);
 
         Book::create([
@@ -42,7 +48,9 @@ class BookSeeder extends Seeder
             'descripsi' => 'Kisah horor yang mencekam dengan suasana gelap dan penuh misteri.',
             'price' => 65000,
             'stok' => 30,
-            'genre' => 'Horror',
+            'cover_photo' => 'bayangan_jpg',
+            'genre_id' => 4,
+            'author_id' => 4,
         ]);
 
         Book::create([
@@ -50,7 +58,9 @@ class BookSeeder extends Seeder
             'descripsi' => 'Misteri yang rumit dan penuh teka-teki yang harus dipecahkan sang detektif.',
             'price' => 70000,
             'stok' => 40,
-            'genre' => 'Mystery',
+            'cover_photo' => 'jejakdetektif_jpg',
+            'genre_id' => 5,
+            'author_id' => 5,
         ]);
     }
 }
