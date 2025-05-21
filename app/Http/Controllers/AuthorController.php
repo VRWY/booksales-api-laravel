@@ -31,7 +31,8 @@ class AuthorController extends Controller
         // 1. Validasi
         $validator = Validator::make($request->all(), [
             'name' => 'required|string',
-            'title' => 'required|string'
+            'photo' => 'required|image|mimes:jpeg,jpg,png|max:2048',
+            'bio' => 'required|string'
         ]);
 
         // 2. Jika validasi gagal
@@ -42,13 +43,18 @@ class AuthorController extends Controller
             ], 422);
         }
 
-        // 3. Simpan ke database
+        // 3. upload image
+        $image = $request->file('photo');
+        $image->store('authors', 'public');
+
+        // 4. Simpan ke database
         $author = Author::create([
             'name' => $request->name,
-            'title' => $request->title
+            'photo' => $image->hashName(),
+            'bio' => $request->bio
         ]);
 
-        // 4. Response sukses
+        // 5. Response sukses
         return response()->json([
             'success' => true,
             'message' => 'Author added successfully',

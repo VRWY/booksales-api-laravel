@@ -19,14 +19,16 @@
         <thead>
             <tr>
                 <th>Name</th>
-                <th>Title</th>
+                <th>Photo</th>
+                <th>Biodata</th>
             </tr>
         </thead>
         <tbody>
             @foreach ($authors as $item)
             <tr>
                 <td>{{ $item['name'] }}</td>
-                <td>{{ $item['title'] }}</td>
+                <td>{{ $item['photo'] }}</td>
+                <td>{{ $item['bio'] }}</td>
             </tr>
             @endforeach
         </tbody>

@@ -15,27 +15,32 @@ class AuthorSeeder extends Seeder
     {
         Author::create([
             'name' => 'Raka Wirawan',
-            'title' => 'Pertarungan Terakhir',
+            'photo' => 'raka_jpg',
+            'bio' => 'Raka Wirawan adalah seorang profesional yang berdedikasi di bidangnya, dikenal atas semangatnya dalam berinovasi dan memberikan kontribusi nyata dalam setiap proyek yang dikerjakannya.',
         ]);
 
         Author::create([
             'name' => 'Laras Prameswari',
-            'title' => 'Asmara di Bawah Hujan',
+            'photo' => 'laras_prameswari.jpg',
+            'bio' => 'Laras Prameswari adalah penulis roman yang piawai menggambarkan emosi dan dinamika hubungan dalam nuansa puitis dan menyentuh hati.',
         ]);
 
         Author::create([
             'name' => 'Dimas Arya',
-            'title' => 'Kerajaan Ajaib',
+            'photo' => 'dimas_arya.jpg',
+            'bio' => 'Dimas Arya adalah penulis fiksi fantasi yang dikenal dengan imajinasi luas dan alur cerita yang memikat pembaca dari berbagai kalangan.',
         ]);
-
+        
         Author::create([
             'name' => 'Indah Kusuma',
-            'title' => 'Bayangan Malam',
+            'photo' => 'indah_kusuma.jpg',
+            'bio' => 'Indah Kusuma merupakan penulis novel misteri dan horor yang mahir menciptakan suasana tegang dan penuh kejutan dalam setiap karyanya.',
         ]);
-
+        
         Author::create([
             'name' => 'Andi Pratama',
-            'title' => 'Jejak Sang Detektif',
+            'photo' => 'andi_pratama.jpg',
+            'bio' => 'Andi Pratama adalah penulis cerita detektif yang terkenal dengan gaya penulisan analitis dan karakter yang cerdas.',
         ]);
     }
 }
