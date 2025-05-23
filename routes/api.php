@@ -11,10 +11,7 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::apiResource('/books', BookController::class);
-Route::post('/books/{id}', [BookController::class, 'update']);
 
 Route::apiResource('/genres', GenreController::class);
-Route::post('/genres/{id}', [GenreController::class, 'update']);
 
 Route::apiResource('/authors', AuthorController::class);
-Route::post('/authors/{id}', [AuthorController::class, 'update']);
