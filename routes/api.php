@@ -27,6 +27,3 @@ Route::middleware(['auth:api'])->group(function () {
         Route::apiResource('/genres', GenreController::class)->only(['store', 'update', 'destroy']);
     });
 });
-
-
-Route::apiResource('/authors', AuthorController::class);
