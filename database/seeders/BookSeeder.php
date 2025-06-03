@@ -18,7 +18,7 @@ class BookSeeder extends Seeder
             'descripsi' => 'Aksi seru penuh adrenalin di medan perang modern.',
             'price' => 80000,
             'stok' => 60,
-            'cover_photo' => 'PertarunganTerakhir_jpg',
+            'cover_photo' => 'PertarunganTerakhir.jpg',
             'genre_id' => 1,
             'author_id' => 1,
         ]);
@@ -28,7 +28,7 @@ class BookSeeder extends Seeder
             'descripsi' => 'Cerita romantis tentang dua insan yang bertemu dalam keindahan hujan.',
             'price' => 70000,
             'stok' => 50,
-            'cover_photo' => 'asrama_jpg',
+            'cover_photo' => 'asmara.jpg',
             'genre_id' => 2,
             'author_id' => 2,
         ]);
@@ -38,7 +38,7 @@ class BookSeeder extends Seeder
             'descripsi' => 'Petualangan fantasi di kerajaan yang penuh sihir dan keajaiban.',
             'price' => 75000,
             'stok' => 45,
-            'cover_photo' => 'kerajaan_jpg',
+            'cover_photo' => 'kerajaan.jpg',
             'genre_id' => 3,
             'author_id' => 3,
         ]);
@@ -48,7 +48,7 @@ class BookSeeder extends Seeder
             'descripsi' => 'Kisah horor yang mencekam dengan suasana gelap dan penuh misteri.',
             'price' => 65000,
             'stok' => 30,
-            'cover_photo' => 'bayangan_jpg',
+            'cover_photo' => 'bayanganmalam.jpg',
             'genre_id' => 4,
             'author_id' => 4,
         ]);
@@ -58,7 +58,7 @@ class BookSeeder extends Seeder
             'descripsi' => 'Misteri yang rumit dan penuh teka-teki yang harus dipecahkan sang detektif.',
             'price' => 70000,
             'stok' => 40,
-            'cover_photo' => 'jejakdetektif_jpg',
+            'cover_photo' => 'jejakdetektif.jpg',
             'genre_id' => 5,
             'author_id' => 5,
         ]);
